@@ -7,7 +7,7 @@ Aulas de frontend(ReacJS) + PWA ministrada na dissiciplina Programação de Apli
 Clone o projeto:
 
 ```bash
-  git clone https://github.com/thiagocordeirooo/aulas-frontend-senai.git
+  git clone https://github.com/ecker91/aulas-frontend-senai
 ```
 
 Entre no diretório do projeto:
@@ -21,7 +21,7 @@ Instale as dependências:
 ```bash
   npm install
 
-  ou 
+  ou
 
   npm i
 ```
@@ -31,4 +31,3 @@ Inicie o servidor localmente:
 ```bash
   npm run dev
 ```
-

@@ -5,7 +5,11 @@ const Avatar = (props) => {
 
   return (
     <div className="avatar_root">
-      <strong>{primeiroNome[0] + segundoNome[0]}</strong>
+      <strong>
+        {segundoNome
+          ? primeiroNome[0] + segundoNome[0]
+          : primeiroNome[0]}
+      </strong>
     </div>
   );
 };

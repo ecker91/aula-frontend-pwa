@@ -1,7 +1,6 @@
-import { useState } from "react";
-import "./BotaoContador.css";
-import Principal from "../../comum/componentes/Principal/Principal";
-import BotaoCustomizado from "../../comum/componentes/BotaoCustomizado/BotaoCustomizado";
+import { useState } from 'react';
+import BotaoCustomizado from '../../comum/componentes/BotaoCustomizado/BotaoCustomizado';
+import Principal from '../../comum/componentes/Principal/Principal';
 
 const BotaoContador = () => {
   const [numero, setNumero] = useState(0);
@@ -9,18 +8,21 @@ const BotaoContador = () => {
   const incrementar = () => {
     setNumero(numero + 1);
   };
+
   const decrementar = () => {
     setNumero(numero - 1);
   };
 
   return (
-    <Principal titulo="Botao Contador" voltarPara="/">
-      <BotaoCustomizado aoClicar={decrementar} cor="primaria">
-        <strong>-</strong>
+    <Principal titulo="Botão Contador" voltarPara="/">
+      <BotaoCustomizado aoClicar={decrementar}>
+        Menos Um
       </BotaoCustomizado>
-      <h2>O número é: {numero}</h2>
-      <BotaoCustomizado aoClicar={incrementar} cor="primaria">
-        <strong>+</strong>
+
+      <h1>O número é: {numero}</h1>
+
+      <BotaoCustomizado aoClicar={incrementar}>
+        Mais Um
       </BotaoCustomizado>
     </Principal>
   );
